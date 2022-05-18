@@ -1,0 +1,36 @@
+body {
+    display: flex;
+
+}
+main {
+    margin: auto;
+    /*to center all content*/
+    min-height: 100vh;
+    /*exact height screen*/
+}
+/*text*/
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+/*buttons*/
+img{
+    width: 10vh;
+}
+.pressButton{
+
+}
+.computerPlays {
+
+}
+.result {
+
+}
+.reset {
+
+}
