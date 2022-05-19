@@ -51,9 +51,8 @@ For the rules you can watch a Youtube clip from the TV-show "The Big Bang Theory
 - [x] CSS: make preparations for stylesheet (actual styling will be done later)
 - [x] JS: prepare choices can be used inside string.
 - [x] JS: make a sting of the choices for the player.
-- [x] JS: prepare variable for player's choice so we can work with it
+- [x] JS: prepare variable for player's choice, so we can work with it
 - [x] JS: add a function that when player clicks a button, the result wil be displayed and remembered.
-- [] JS: call this function to the resting 4 buttons.
 - [] JS: add a function that when player presses play, the computer will auto-pic one of the 5 choices, the result will be displayed and remembered.
 - [] JS: add a function to decide who has won the game, and display the result.
 - [] JS: add a function to the reset button to reset the game
