@@ -1,34 +1,55 @@
 body {
     display: flex;
-    background-color: goldenrod;
-
+    background-color: forestgreen;
 }
+
 main {
     margin: auto;
     /*to center all content*/
     min-height: 100vh;
     /*exact height screen*/
 }
+
 /*text*/
-h1 {
-
-}
-h2 {
-
-}
-h3 {
-
-}
-/*buttons*/
-img{
-    width: 10vh;
-}
-.pressButton{
-
+header h1 {
+font-size: 35px;
+    color: honeydew;
 }
 .result {
-
+    position: relative;
+    top: -520px;
+    left: 250px;
+    font-size: 20px;
+    color: darkgreen;
 }
-.reset {
+.score {
+    position: relative;
+    top: -320px;
+    left: 250px;
+    font-size: 20px;
+    color: mediumblue;
+}
 
+/*buttons*/
+img  {
+    width: 9vh;
+}
+.reset img{
+    height: 100px;
+    width: 100px;
+    border-radius: 110px;
+    box-shadow: 10px 10px 5px 3px darkslategray;
+    margin: 10px 10px 10px 70px;
+}
+.button {
+    border-width: 3px;
+    border-style: outset;
+    border-color: forestgreen;
+    padding: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 110px;
+    background-color: forestgreen;
+    box-shadow: 10px 10px 5px 3px darkslategray;
+    margin: 8px 8px 8px 80px;
 }

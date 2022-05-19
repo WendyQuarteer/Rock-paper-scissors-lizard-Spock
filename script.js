@@ -17,7 +17,7 @@ function result(player, computer) {
     if (player === computer) {
         winner.innerText = ("It\s a Tie.");
     }
-    if (player === rock.title) {
+    else if (player === rock.title) {
         if (computer === scissors.title || computer === lizard.title) {
             winner.innerText = ('You win!');
             playerWins++;
@@ -26,7 +26,7 @@ function result(player, computer) {
             computerWins++;
         }
     }
-    if (player === scissors.title) {
+    else if (player === scissors.title) {
         if (computer === lizard.title || computer === paper.title) {
             winner.innerText = ('You win!');
             playerWins++;
@@ -35,7 +35,7 @@ function result(player, computer) {
             computerWins++;
         }
     }
-    if (player === lizard.title) {
+    else if (player === lizard.title) {
         if (computer === paper.title || computer === spock.title) {
             winner.innerText = ('You win');
             playerWins++;
@@ -44,7 +44,7 @@ function result(player, computer) {
             computerWins++;
         }
     }
-    if (player === paper.title) {
+    else if (player === paper.title) {
         if (computer === rock.title || computer === spock.title) {
             winner.innerText = ('You win');
             playerWins++;
@@ -53,7 +53,7 @@ function result(player, computer) {
             computerWins++;
         }
     }
-    if (player === spock.title) {
+    else if (player === spock.title) {
         if (computer === rock.title || computer === scissors.title) {
             winner.innerText = ('You win');
             playerWins++;

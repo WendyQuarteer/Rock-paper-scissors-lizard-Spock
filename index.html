@@ -9,54 +9,54 @@
 <main>
     <header><h1>Rock-Paper-Scissors-Lizard-Spock</h1></header>
 
-    <div id="game">
-        <div class="pressButton">
-            <table>
-                <tr>
-                    <td>
-                        <a>
-                            <img src="pictures/rock.png" id="rock" alt="Rock" title="Rock">
-                        </a>
-                    </td>
-                    <td>
-                        <a>
-                            <img src="pictures/paper.png" id="paper" alt="Paper" title="Paper">
-                        </a>
-                    </td>
-                    <td>
-                        <a>
-                            <a>
-                                <img src="pictures/scissors.png" id="scissors" alt="Scissors" title="Scissors">
-                            </a>
-                        </a>
-                    </td>
-                    <td>
-                        <a>
-                            <img src="pictures/lizard.png" id="lizard" alt="Lizard" title="Lizard">
-                        </a>
-                    </td>
-                    <td>
-                        <a>
-                            <img src="pictures/spock.png" id="spock" alt="Spock" title="Spock">
-                        </a>
-                    </td>
-                </tr>
-            </table>
+    <div class="game">
+
+        <div class="button">
+            <a>
+                <img src="pictures/rock.png" id="rock" alt="Rock" title="Rock">
+            </a>
         </div>
 
-        <div class="result">
-            <h3 id="playerComment"></h3>
-            <h3 id="computerComment"></h3>
-            <h2 id="winner"></h2>
-            <h2 id="points"></h2>
+        <div class="button">
+            <a>
+                <img src="pictures/paper.png" id="paper" alt="Paper" title="Paper">
+            </a>
         </div>
+
+        <div class="button">
+            <a>
+                <img src="pictures/scissors.png" id="scissors" alt="Scissors" title="Scissors">
+            </a>
+        </div>
+
+        <div class="button">
+            <a>
+                <img src="pictures/lizard.png" id="lizard" alt="Lizard" title="Lizard">
+            </a>
+        </div>
+
+        <div class="button">
+            <a>
+                <img src="pictures/spock.png" id="spock" alt="Spock" title="Spock">
+            </a>
+        </div>
+        <div class="reset">
+            <a>
+                <img src="pictures/reset.png" id="resetButton" alt="Reset" title="Reset">
+            </a>
+        </div>
+
     </div>
 
-    <div class="reset">
-        <a>
-            <img src="pictures/reset.png" id="resetButton" alt="Reset" title="Reset">
-        </a>
+    <div class="result">
+        <h3 id="playerComment"></h3>
+        <h3 id="computerComment"></h3>
     </div>
+    <div class="score">
+    <h2 id="winner"></h2>
+    <h2 id="points"></h2>
+    </div>
+
 
 </main>
 <script src="script.js"></script>
