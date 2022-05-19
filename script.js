@@ -4,66 +4,65 @@ const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const lizard = document.getElementById("lizard");
 const spock = document.getElementById("spock");
+const reset = document.getElementById("resetButton")
 //make a string of the options for the player to use.
-const options = [rock, paper, scissors, lizard, spock];
+const options = [rock, paper, scissors, lizard, spock, reset];
 let playerWins = 0;
 let computerWins = 0;
+
 
 //add function to display the winner of the current game and add a point for the winner.
 function result(player, computer) {
     const winner = document.getElementById("winner");
-
-            if (player === computer)
-            {
-                winner.innerText = ("It\s a Tie.");
-            }
-            if (player === rock.title) {
-                if (computer === scissors.title || computer === lizard.title) {
-                    winner.innerText = ('You win!');
-                    playerWins++;
-                } else {
-                    winner.innerText = ('Computer wins!');
-                    computerWins++;
-                }
-            }
-            if (player === scissors.title) {
-                if (computer === lizard.title || computer === paper.title) {
-                    winner.innerText = ('You win!');
-                    playerWins++;
-                } else {
-                    winner.innerText = ('Computer wins!');
-                    computerWins++;
-                }
-            }
-            if (player === lizard.title) {
-                if (computer === paper.title || computer === spock.title) {
-                    winner.innerText = ('You win');
-                    playerWins++;
-                } else {
-                    winner.innerText = ('Computer wins!');
-                    computerWins++;
-                }
-            }
-            if (player === paper.title) {
-                if (computer === rock.title || computer === spock.title) {
-                    winner.innerText = ('You win');
-                    playerWins++;
-                } else {
-                    winner.innerText = ('Computer wins!');
-                    computerWins++;
-                }
-            }
-            if (player === spock.title) {
-                if (computer === rock.title || computer === scissors.title) {
-                    winner.innerText = ('You win');
-                    playerWins++;
-                } else {
-                    winner.innerText = ('Computer wins!');
-                    computerWins++;
-                }
-            }
+    if (player === computer) {
+        winner.innerText = ("It\s a Tie.");
     }
-
+    if (player === rock.title) {
+        if (computer === scissors.title || computer === lizard.title) {
+            winner.innerText = ('You win!');
+            playerWins++;
+        } else {
+            winner.innerText = ('Computer wins!');
+            computerWins++;
+        }
+    }
+    if (player === scissors.title) {
+        if (computer === lizard.title || computer === paper.title) {
+            winner.innerText = ('You win!');
+            playerWins++;
+        } else {
+            winner.innerText = ('Computer wins!');
+            computerWins++;
+        }
+    }
+    if (player === lizard.title) {
+        if (computer === paper.title || computer === spock.title) {
+            winner.innerText = ('You win');
+            playerWins++;
+        } else {
+            winner.innerText = ('Computer wins!');
+            computerWins++;
+        }
+    }
+    if (player === paper.title) {
+        if (computer === rock.title || computer === spock.title) {
+            winner.innerText = ('You win');
+            playerWins++;
+        } else {
+            winner.innerText = ('Computer wins!');
+            computerWins++;
+        }
+    }
+    if (player === spock.title) {
+        if (computer === rock.title || computer === scissors.title) {
+            winner.innerText = ('You win');
+            playerWins++;
+        } else {
+            winner.innerText = ('Computer wins!');
+            computerWins++;
+        }
+    }
+}
 
 
 //add function when player clicks any of the choices.
@@ -86,6 +85,19 @@ options.forEach(option => {
 
     })
 });
+//add a function to reset/reload page.
+document.getElementById("resetButton").addEventListener("click", function reset() {
+    console.log("reset button clicked");
+    window.location.reload();
+})
+
+
+
+
+
+
+
+
 
 
 

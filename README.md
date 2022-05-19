@@ -56,7 +56,7 @@ For the rules you can watch a Youtube clip from the TV-show "The Big Bang Theory
 - [x] JS: add a function that when player presses play, the computer will auto-pic one of the 5 choices, the result will be displayed.
 - [x] JS: add a function to display the winner of each game.
 - [x] Js: add a function to display the total results.
-- [] JS: add a function to the reset button to reset the game.
+- [x] JS: add a function to the reset button to reset the game.
 - [] JS: maybe ad a scoreboard to count the total winning of each, player & computer.
 
 
