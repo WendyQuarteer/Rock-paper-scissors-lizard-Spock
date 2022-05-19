@@ -6,12 +6,13 @@ const lizard = document.getElementById("lizard");
 const spock = document.getElementById("spock");
 //make a string of the options for the player to use.
 const options = [rock, paper, scissors, lizard, spock];
+let playerWins = 0;
+let computerWins = 0;
 
-//add function to display the winner of the current game.
+//add function to display the winner of the current game and add a point for the winner.
 function result(player, computer) {
-    let winner = document.getElementById("winner");
-    console.log(player);
-    console.log(computer)
+    const winner = document.getElementById("winner");
+
             if (player === computer)
             {
                 winner.innerText = ("It\s a Tie.");
@@ -19,39 +20,51 @@ function result(player, computer) {
             if (player === rock.title) {
                 if (computer === scissors.title || computer === lizard.title) {
                     winner.innerText = ('You win!');
+                    playerWins++;
                 } else {
                     winner.innerText = ('Computer wins!');
+                    computerWins++;
                 }
             }
-            if (player === scissors) {
+            if (player === scissors.title) {
                 if (computer === lizard.title || computer === paper.title) {
                     winner.innerText = ('You win!');
+                    playerWins++;
                 } else {
                     winner.innerText = ('Computer wins!');
+                    computerWins++;
                 }
             }
-            if (player === lizard) {
+            if (player === lizard.title) {
                 if (computer === paper.title || computer === spock.title) {
-                    winner.innerText = ('Computer wins!');
+                    winner.innerText = ('You win');
+                    playerWins++;
                 } else {
-                    winner.innerText = ('You win!');
+                    winner.innerText = ('Computer wins!');
+                    computerWins++;
                 }
             }
-            if (player === paper) {
+            if (player === paper.title) {
                 if (computer === rock.title || computer === spock.title) {
-                    winner.innerText = ('Computer wins!');
+                    winner.innerText = ('You win');
+                    playerWins++;
                 } else {
-                    winner.innerText = ('You win!');
+                    winner.innerText = ('Computer wins!');
+                    computerWins++;
                 }
             }
             if (player === spock.title) {
                 if (computer === rock.title || computer === scissors.title) {
-                    winner.innerText = ('Computer wins!');
+                    winner.innerText = ('You win');
+                    playerWins++;
                 } else {
-                    winner.innerText = ('You win!');
+                    winner.innerText = ('Computer wins!');
+                    computerWins++;
                 }
             }
     }
+
+
 
 //add function when player clicks any of the choices.
 options.forEach(option => {
@@ -68,7 +81,8 @@ options.forEach(option => {
         const computerChoice = options[random].title;
         computerComment.innerText = (`Computer chose ${computerChoice}!`);
         result(playerChoice, computerChoice);
-
+        const points = document.getElementById("points");
+        points.innerText = (`You: ${playerWins} / Computer: ${computerWins}`);
 
     })
 });
