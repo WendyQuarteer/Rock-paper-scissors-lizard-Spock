@@ -12,7 +12,7 @@ main {
 
 /*text*/
 header h1 {
-font-size: 35px;
+font-size: 37px;
     color: honeydew;
 }
 .result {
@@ -20,7 +20,7 @@ font-size: 35px;
     top: -520px;
     left: 250px;
     font-size: 20px;
-    color: darkgreen;
+    color: gold;
 }
 .score {
     position: relative;
@@ -33,6 +33,35 @@ font-size: 35px;
 /*buttons*/
 img  {
     width: 9vh;
+}
+#rock {
+    position: relative;
+    top: 12px;
+    width: 9vh;
+}
+#paper {
+    position: relative;
+    top: 2px;
+    left: -7px;
+    width: 11vh;
+}
+#scissors {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    width: 10vh;
+}
+#lizard {
+    position: relative;
+    top: 4px;
+    left: -14px;
+    width: 12vh;
+}
+#spock {
+    position: relative;
+    top: -10px;
+    left: -8px;
+    width: 11vh;
 }
 .reset img{
     height: 100px;
