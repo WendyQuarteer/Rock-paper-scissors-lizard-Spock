@@ -1,7 +1,5 @@
 # Rock-paper-scissors-lizard-Spock
 
-
-# Rock-paper-scissors-Lizard-Spock</h1>
 Type of Challenge: Learning Challenge
 Duration: start 18/05/2022
 Deployment strategy : Github page

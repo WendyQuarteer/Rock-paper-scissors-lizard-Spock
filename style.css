@@ -41,27 +41,27 @@ img  {
 }
 #paper {
     position: relative;
-    top: 2px;
+    top: 1px;
     left: -7px;
     width: 11vh;
 }
 #scissors {
     position: relative;
-    top: 1px;
+    top: 2px;
     left: 1px;
     width: 10vh;
 }
 #lizard {
     position: relative;
-    top: 4px;
+    top: 5px;
     left: -14px;
     width: 12vh;
 }
 #spock {
     position: relative;
     top: -10px;
-    left: -8px;
-    width: 11vh;
+    left: -7px;
+    width: 11.5vh;
 }
 .reset img{
     height: 100px;
